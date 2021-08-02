@@ -6,7 +6,7 @@ Java ile Backend Web Development Patikası
 
 ## :arrow_forward: Pratik 1 - Not Ortalaması Hesaplayan Program
 
-:scroll: Java ile Matematik, Fizik, Kimya, Türkçe, Tarih, Müzik derslerinin sınav puanlarını kullanıcıdan alan ve ortalamalarını hesaplayıp ekrana bastırılan programı yazın.Aynı program içerisinde koşullu ifadeler kullanılarak, eğer kullanıcının ortalaması 60'dan büyük ise ekrana "Sınıfı Geçti", küçük ise "Sınıfta Kaldı" yazsın.
+:scroll: Java ile Matematik, Fizik, Kimya, Türkçe, Tarih, Müzik derslerinin sınav puanlarını kullanıcıdan alan ve ortalamalarını hesaplayıp ekrana bastırılan programı yazın. Aynı program içerisinde koşullu ifadeler kullanılarak, eğer kullanıcının ortalaması 60'dan büyük ise ekrana "Sınıfı Geçti", küçük ise "Sınıfta Kaldı" yazsın.
 
 **Not** : If ve Else kullanılmayacak...
 
@@ -114,3 +114,52 @@ public class KdvTutar {
 
 ------------
 
+## :arrow_forward: Pratik 3 - Dik Üçgende Hipotenüs Bulan Program
+
+:scroll: Java ile kullanıcıdan dik kenarlarının uzunluğunu alan ve hipotenüsü hesaplayan programı yazın. Üç kenar uzunluğunu kullanıcıdan aldığınız üçgenin alanını hesaplayan programı yazınız.
+
+>Üçgenin Çevresi = 2𝑢
+>
+>𝑢 = (a+b+c) / 2
+>
+>Alan&sup2; = 𝑢&times;(𝑢 − 𝑎)&times;(𝑢 − 𝑏)&times;(𝑢 − 𝑐)
+
+### :white_check_mark: Cevap :
+<details>
+  <summary>Kodu Gör!</summary>
+  
+ ```java
+import java.util.Scanner;
+
+public class Hipotenüs {
+    public static void main(String[] args) {
+
+    double a, b, c, alan, cevre, u;
+
+    Scanner veri = new Scanner(System.in);
+    System.out.print("İlk kenarı giriniz : ");
+    a = veri.nextDouble();
+
+    System.out.print("İkinci kenarı giriniz : ");
+    b = veri.nextDouble();
+    
+    veri.close();
+    
+    c = Math.sqrt((a*a) + (b*b));
+
+    System.out.println("\nHipotenüs : " + c);
+
+    cevre = a+b+c;
+    u = cevre / 2;
+    alan = Math.sqrt(u*(u-a)*(u-b)*(u-c));
+    
+    System.out.println("Üçgenin alanı : " + alan);
+    
+    }
+}
+
+```
+</details>
+
+
+------------
