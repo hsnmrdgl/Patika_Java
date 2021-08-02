@@ -3,6 +3,8 @@ Java ile Backend Web Development Patikası
 
 - [Pratik 1](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-1---not-ortalamas%C4%B1-hesaplayan-program "Pratik 1")
 - [Pratik 2](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-2---kdv-tutar%C4%B1-hesaplayan-program "Pratik 2")
+- [Pratik 3](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-3---dik-%C3%BC%C3%A7gende-hipoten%C3%BCs-bulan-program "Pratik 3")
+- [Pratik 4](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-4---taksimetre-hesaplayan-program "Pratik 4")
 
 ## :arrow_forward: Pratik 1 - Not Ortalaması Hesaplayan Program
 
@@ -155,6 +157,50 @@ public class Hipotenüs {
     
     System.out.println("Üçgenin alanı : " + alan);
     
+    }
+}
+
+```
+</details>
+
+
+------------
+
+## :arrow_forward: Pratik 4 - Taksimetre Hesaplayan Program
+
+:scroll: Java ile gidilen mesafeye (KM) göre taksimetre tutarını ekrana yazdıran programı yazın.
+- Taksimetre KM başına 2.20 TL tutmaktadır.
+- Minimum ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
+- Taksimetre açılış ücreti 10 TL'dir.
+
+### :white_check_mark: Cevap :
+<details>
+  <summary>Kodu Gör!</summary>
+  
+ ```java
+import java.util.Scanner;
+
+public class Taksimetre {
+    public static void main(String[] args) {
+
+    int km;
+    double tutar;
+
+    Scanner veri = new Scanner(System.in);
+    System.out.print("Mesafeyi giriniz : ");
+    km = veri.nextInt();
+    veri.close();
+    
+    
+
+    tutar = 10 + (km * 2.20);
+
+    if(tutar < 20){
+        tutar = 20;
+    }
+
+    System.out.println("Toplam tutar : " + tutar);
+
     }
 }
 
