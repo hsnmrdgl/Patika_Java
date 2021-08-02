@@ -5,6 +5,8 @@ Java ile Backend Web Development Patikası
 - [Pratik 2](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-2---kdv-tutar%C4%B1-hesaplayan-program "Pratik 2")
 - [Pratik 3](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-3---dik-%C3%BC%C3%A7gende-hipoten%C3%BCs-bulan-program "Pratik 3")
 - [Pratik 4](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-4---taksimetre-hesaplayan-program "Pratik 4")
+- [Pratik 5](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-5---dairenin-alan%C4%B1n%C4%B1-ve-%C3%A7evresini-hesaplayan-program "Pratik 5")
+
 
 ## :arrow_forward: Pratik 1 - Not Ortalaması Hesaplayan Program
 
