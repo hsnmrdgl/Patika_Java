@@ -209,3 +209,52 @@ public class Taksimetre {
 
 
 ------------
+
+## :arrow_forward: Pratik 5 - Dairenin Alanını ve Çevresini Hesaplayan Program
+
+:scroll: Java ile yarı çapını kullanıcıdan aldığınız dairenin alanını ve çevresini hesaplayan programı yazın. Yarıçapı r, merkez açısısının ölçüsü 𝛼 olan daire diliminin alanı bulan programı yazınız.
+	
+**Not** : 𝜋 sayısını = 3.14 alınız.
+	
+> Alan Formülü : π &times; r&sup2;
+>
+> Çevre Formülü : 2π &times; r
+>
+> Formül : (𝜋 &times; r&sup2; &times; 𝛼) / 360
+	
+### :white_check_mark: Cevap :
+<details>
+  <summary>Kodu Gör!</summary>
+  
+ ```java
+import java.util.Scanner;
+
+public class DaireHesap {
+    public static void main(String[] args) {
+        
+        double r, alan, cevre, merkezAcı, dilimAlan, pi=3.14;
+
+        Scanner veri = new Scanner(System.in);
+        System.out.print("Dairenin yarıçapını (cm cisinden) giriniz : ");
+        r = veri.nextDouble();
+        System.out.print("Dairenin merkez açısını giriniz : ");
+        merkezAcı = veri.nextDouble();
+        veri.close();
+
+        cevre = 2*pi*r;
+        System.out.println("Dairenin çevresi : " + cevre + "cm");
+
+        alan = pi*r*r;
+        System.out.println("Dairenin alanı : " + alan + "cm\u00B2");
+
+
+        dilimAlan=(alan*merkezAcı)/360;
+        System.out.println("Daire diliminin alanı : " + dilimAlan + "cm\u00B2");
+    }
+}
+
+```
+</details>
+
+
+------------
