@@ -1,8 +1,8 @@
 # 	:man_technologist: Kodluyoruz / Patika - Java 101
 Java ile Backend Web Development Patikası
 
-- [Pratik 1](https://github.com/hsnmrdgl/Patika-Java#pratik-1---not-ortalamas%C4%B1-hesaplayan-program "Pratik 1")
-- [Pratik 2](https://github.com/hsnmrdgl/Patika-Java#pratik-2---kdv-tutar%C4%B1-hesaplayan-program "Pratik 2")
+- [Pratik 1](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-1---not-ortalamas%C4%B1-hesaplayan-program "Pratik 1")
+- [Pratik 2](https://github.com/hsnmrdgl/Patika-Java#arrow_forward-pratik-2---kdv-tutar%C4%B1-hesaplayan-program "Pratik 2")
 
 ## :arrow_forward: Pratik 1 - Not Ortalaması Hesaplayan Program
 
