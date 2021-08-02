@@ -260,3 +260,45 @@ public class DaireHesap {
 
 
 ------------
+
+	
+## :arrow_forward: Ödev 1 - Vücut Kitle İndeksi Hesaplayan Program
+	
+:scroll: Java ile kullanıcıdan boy ve kilo değerlerini alıp bir değişkene atayın. Aşağıda ki formüle göre kullanıcının "Vücut Kitle İndeks" değerini hesaplayıp ekrana yazdırın.
+
+:pushpin: Örnek Çıktı
+	  
+    Lütfen boyunuzu (metre cinsinde) giriniz : 1,83
+    Lütfen kilonuzu giriniz : 75
+    Vücut Kitle İndeksiniz : 22.395413419331717
+	
+### :white_check_mark: Cevap :
+<details>
+  <summary>Kodu Gör!</summary>
+  
+ ```java
+import java.util.Scanner;
+
+public class VücutKitleİndeks {
+    public static void main(String[] args) {
+        
+        double boy, kilo, indeks;
+
+        Scanner veri = new Scanner(System.in);
+        System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz : ");
+        boy = veri.nextDouble();
+        System.out.print("Lütfen kilonuzu giriniz : ");
+        kilo = veri.nextDouble();
+        veri.close();
+
+        indeks = kilo / (boy * boy);
+
+        System.out.println("Vücut Kitle İndeksiniz : " + indeks);
+    }
+}
+
+```
+</details>
+
+
+------------
