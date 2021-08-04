@@ -8,7 +8,7 @@ Java ile Backend Web Development Patikası
 - [Pratik 5](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-5---dairenin-alan%C4%B1n%C4%B1-ve-%C3%A7evresini-hesaplayan-program "Pratik 5")
 - [Ödev 1](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-%C3%B6dev-1---v%C3%BCcut-kitle-i%CC%87ndeksi-hesaplayan-program "Ödev 1")
 - [Ödev 2](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-%C3%B6dev-2---manav-kasa-program%C4%B1 "Ödev 2")
-
+- [Pratik 6](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-6---hesap-makinesi "Pratik 6")
 
 ## :arrow_forward: Pratik 1 - Not Ortalaması Hesaplayan Program
 
@@ -370,3 +370,74 @@ public class ManavProgramı {
 
 
 ------------
+	
+## :arrow_forward: Pratik 6 - Hesap Makinesi
+
+:scroll: Java koşullu ifadeler ile basit hesap makinesi yapımı. Hesap makinesini switch-case kullanarak yapınız.
+	
+	
+### :white_check_mark: Cevap :
+<details>
+  <summary>Kodu Gör!</summary>
+  
+ ```java
+import java.util.Scanner;
+
+public class HesapMakinesi {
+    public static void main(String[] args) {
+
+        double sayi1, sayi2, sonuc;
+        char islem;
+        Scanner veri = new Scanner(System.in);
+
+        System.out.print("1. Sayıyı giriniz > ");
+        sayi1 = veri.nextInt();
+
+        System.out.print("2. Sayıyı giriniz > ");
+        sayi2 = veri.nextInt();
+
+        System.out.println("\tToplama işlemi için \"+\"");
+        System.out.println("\tÇıkarma işlemi için \"-\"");
+        System.out.println("\tÇarpma işlemi için \"*\"");
+        System.out.println("\tBölme işlemi için \"/\"");
+        System.out.print("Yapmak istediğiniz işlem için ilgili sayıyı seçiniz >> ");
+
+        islem = veri.next().charAt(0);
+
+        switch (islem) {
+            case '+':
+                sonuc = sayi1 + sayi2;
+                System.out.print("Toplama sonucu = " + sonuc);
+                break;
+            case '-':
+                sonuc = sayi1 - sayi2;
+                System.out.print("Çıkarma sonucu = " + sonuc);
+                break;
+            case '*':
+                sonuc = sayi1 * sayi2;
+                System.out.print("Çarpma sonucu = " + sonuc);
+                break;
+            case '/':
+                if (sayi2 == 0) {
+                    System.out.print("Bir sayı sıfıra bölünemez");
+                    break;
+                } else {
+                    sonuc = sayi1 / sayi2;
+                    System.out.print("Bölme sonucu = " + sonuc);
+                    break;
+                }
+            default:
+                System.out.print("Geçerli bir operatör seçin!");
+                break;
+
+        }
+        veri.close();
+    }
+}
+
+```
+</details>
+	
+
+------------
+
