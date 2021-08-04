@@ -9,6 +9,8 @@ Java ile Backend Web Development Patikası
 - [Ödev 1](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-%C3%B6dev-1---v%C3%BCcut-kitle-i%CC%87ndeksi-hesaplayan-program "Ödev 1")
 - [Ödev 2](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-%C3%B6dev-2---manav-kasa-program%C4%B1 "Ödev 2")
 - [Pratik 6](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-6---hesap-makinesi "Pratik 6")
+- [Pratik 7](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-7---kullanıcı-girisi "Pratik 7")
+
 
 ## :arrow_forward: Pratik 1 - Not Ortalaması Hesaplayan Program
 
@@ -441,3 +443,70 @@ public class HesapMakinesi {
 
 ------------
 
+## :arrow_forward: Pratik 7 - Kullanıcı Girişi
+	
+:scroll: Java koşullu ifadeler ile kullanıcı adı ve şifreyi kontrol eden program yapımı. Eğer şifre yanlış ise kullanıcıya şifresini sıfırlayıp sıfırlamayacağını sorun, eğer kullanıcı sıfırlamak isterse yeni girdiği şifrenin hatalı girdiği ve unuttuğu şifre ile aynı olmaması gerektiğini kontrol edip , şifreler aynı ise ekrana "Şifre oluşturulamadı, lütfen başka şifre giriniz." sorun yoksa "Şifre oluşturuldu" yazan programı yazınız.
+
+### :white_check_mark: Cevap :
+<details>
+  <summary>Kodu Gör!</summary>
+  
+ ```java
+import java.util.Scanner;
+
+public class KullaniciGirisi {
+    public static void main(String[] args) {
+
+        String username, password;
+        char sifreCevap;
+
+        Scanner veri = new Scanner(System.in);
+
+        System.out.print("Kullanıcı Adı : ");
+        username = veri.nextLine();
+        System.out.print("Şifre : ");
+        password = veri.nextLine();
+
+        if (username.equals("patika")) {
+            if (password.equals("dev")) {
+                System.out.println("Giriş Başarılı!");
+            }
+            
+            else {
+                System.out.println("Hatalı şifre girişi!");
+                System.out.print("Şifrenizi sıfırlamak ister misiniz? (E)vet/(H)ayır : ");
+                sifreCevap = veri.next().charAt(0);
+
+                if (sifreCevap == 'E') {
+
+                    System.out.print("Yeni Şifre : ");
+                    String newpassword = veri.next();
+                    veri.close();
+
+                    if (newpassword.equals(password) || newpassword.equals("dev")) {
+                        System.out.print("Yeni şifre eski şifreyle aynı olmamalıdır!");
+                    }
+                    else {
+                        System.out.print("Yeni şifre başarıyla oluşturuldu!");
+                    }
+                }
+                else if (sifreCevap == 'H') {
+                    System.out.print("Tekrar giriş yapınız.");
+
+                }
+                else {
+                    System.out.print("Lütfen geçerli bir parametre giriniz. E (Evet) veya H (Hayır) !");
+                }
+            }
+        }
+        else {
+            System.out.println("Geçersiz kullanıcı adı!");
+        }
+    }
+}
+
+```
+</details>
+	
+
+------------
