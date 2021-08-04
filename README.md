@@ -9,7 +9,7 @@ Java ile Backend Web Development Patikası
 - [Ödev 1](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-%C3%B6dev-1---v%C3%BCcut-kitle-i%CC%87ndeksi-hesaplayan-program "Ödev 1")
 - [Ödev 2](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-%C3%B6dev-2---manav-kasa-program%C4%B1 "Ödev 2")
 - [Pratik 6](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-6---hesap-makinesi "Pratik 6")
-- [Pratik 7](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-7---kullanıcı-girisi "Pratik 7")
+- [Pratik 7](https://github.com/hsnmrdgl/Patika_Java#arrow_forward-pratik-7---kullan%C4%B1c%C4%B1-giri%C5%9Fi "Pratik 7")
 
 
 ## :arrow_forward: Pratik 1 - Not Ortalaması Hesaplayan Program
